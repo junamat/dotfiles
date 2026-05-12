@@ -1,0 +1,17 @@
+[StreamInputs]
+inputDevice=alsa_input.usb-Burr-Brown_from_TI_USB_Audio_CODEC-00.analog-stereo-input
+plugins=rnnoise#0,stereo_tools#0
+visiblePage=pluginsPage
+visiblePlugin=stereo_tools#0
+
+[StreamOutputs]
+outputDevice=alsa_output.usb-HP__Inc_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+
+[Style]
+forceBreezeTheme=false
+
+[Window]
+autostartOnLogin=true
+height=1384
+visiblePage=inputPage
+width=1708
