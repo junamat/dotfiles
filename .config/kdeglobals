@@ -1,0 +1,6 @@
+[General]
+TerminalApplication=kitty
+TerminalService=Kitty.desktop
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
