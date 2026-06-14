@@ -124,6 +124,11 @@
       "id": "darkMode",
       "enabled": true,
       "width": 50
+    },
+    {
+      "id": "plugin_dankKDEConnect",
+      "enabled": true,
+      "width": 100
     }
   ],
   "showWorkspaceIndex": false,
@@ -540,7 +545,7 @@
       "borderThickness": 1,
       "fontScale": 1,
       "autoHide": true,
-      "autoHideDelay": 250,
+      "autoHideDelay": 0,
       "openOnOverview": false,
       "visible": true,
       "popupGapsAuto": true,
@@ -644,9 +649,9 @@
       },
       "positions": {
         "DP-1": {
-          "width": 428.06640625,
-          "height": 208.48828125,
-          "x": 803.5078125,
+          "width": 1050.2890625,
+          "height": 210.58203125,
+          "x": 803.73828125,
           "y": 486.625
         },
         "": {
@@ -785,8 +790,8 @@
         "DP-1": {
           "width": 482.18359375,
           "height": 458.51171875,
-          "x": 1193.203125,
-          "y": 215.8046875
+          "x": 1189.11328125,
+          "y": 83.28125
         },
         "": {
           "width": 200,
