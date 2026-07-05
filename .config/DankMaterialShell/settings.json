@@ -225,7 +225,9 @@
   "appLauncherGridColumns": 4,
   "spotlightCloseNiriOverview": true,
   "spotlightSectionViewModes": {},
-  "appDrawerSectionViewModes": {},
+  "appDrawerSectionViewModes": {
+    "apps": "list"
+  },
   "niriOverviewOverlayEnabled": true,
   "dankLauncherV2Size": "large",
   "dankLauncherV2BorderEnabled": false,
@@ -429,7 +431,8 @@
   "niriOutputSettings": {},
   "hyprlandOutputSettings": {
     "DP-1": {
-      "bitdepth": 10
+      "bitdepth": 10,
+      "colorManagement": "auto"
     }
   },
   "displayProfiles": {},
