@@ -13,7 +13,7 @@
 @define-color error_fg_color #601410;
 /* Follow material spec (also I think looks nicer) */
 @define-color accent_fg_color #000000;
-@define-color accent_bg_color #fcfc03;
+@define-color accent_bg_color #03fc7b;
 /* Use surface instead of background */
 @define-color window_bg_color #000000;
 @define-color window_fg_color #e6f0ff;

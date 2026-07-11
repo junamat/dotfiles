@@ -6,6 +6,7 @@ visiblePlugin=rnnoise#0
 
 [StreamOutputs]
 outputDevice=alsa_output.usb-HP__Inc_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
+visiblePage=pluginsPage
 
 [Style]
 forceBreezeTheme=false
@@ -13,5 +14,4 @@ forceBreezeTheme=false
 [Window]
 autostartOnLogin=true
 height=1440
-visiblePage=inputPage
-width=1720
+width=3440
