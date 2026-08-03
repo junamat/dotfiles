@@ -39,7 +39,7 @@
   "firstDayOfWeek": -1,
   "showWeekNumber": false,
   "calendarBackend": "auto",
-  "use24HourClock": true,
+  "clockFormat": "auto",
   "showSeconds": false,
   "padHours12Hour": false,
   "useFahrenheit": false,
@@ -67,6 +67,7 @@
   "blurEnabled": false,
   "blurForegroundLayers": true,
   "blurLayerOutlineOpacity": 0.12,
+  "blurBorderEnabled": true,
   "blurBorderColor": "outline",
   "blurBorderCustomColor": "#ffffff",
   "blurBorderOpacity": 0.35,
@@ -207,6 +208,7 @@
   "scrollTitleEnabled": true,
   "mediaAdaptiveWidthEnabled": true,
   "audioVisualizerEnabled": true,
+  "mediaUseAlbumArtAccent": false,
   "audioScrollMode": "volume",
   "audioWheelScrollAmount": 5,
   "audioDeviceScrollVolumeEnabled": false,
@@ -258,6 +260,11 @@
       "pattern": "^steam_app_(\\d+)$",
       "replacement": "steam_icon_$1",
       "type": "regex"
+    },
+    {
+      "pattern": "^osu!.exe$",
+      "replacement": "osu-wine",
+      "type": "exact"
     }
   ],
   "centeringMode": "index",
@@ -269,12 +276,10 @@
   "greeterEnableFprint": false,
   "greeterEnableU2f": false,
   "greeterWallpaperPath": "",
-  "greeterUse24HourClock": true,
-  "greeterShowSeconds": false,
-  "greeterPadHours12Hour": false,
   "greeterLockDateFormat": "",
   "greeterFontFamily": "",
   "greeterWallpaperFillMode": "",
+  "greeterPamExternallyManaged": false,
   "greeterSyncPending": false,
   "greeterSyncBaseline": {},
   "mediaSize": 1,
@@ -300,6 +305,7 @@
     "apps": "list"
   },
   "niriOverviewOverlayEnabled": true,
+  "niriOverviewLauncherStyle": "full",
   "dankLauncherV2Size": "large",
   "dankLauncherV2ShowSourceBadges": true,
   "dankLauncherV2BorderEnabled": false,
@@ -420,11 +426,6 @@
   "fadeToDpmsEnabled": true,
   "fadeToDpmsGracePeriod": 5,
   "launchPrefix": "",
-  "brightnessDevicePins": {},
-  "wifiNetworkPins": {},
-  "bluetoothDevicePins": {},
-  "audioInputDevicePins": {},
-  "audioOutputDevicePins": {},
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
@@ -502,6 +503,7 @@
   "notificationOverlayEnabled": false,
   "notificationPopupShadowEnabled": true,
   "notificationPopupPrivacyMode": false,
+  "notificationForegroundLayers": true,
   "modalDarkenBackground": true,
   "lockScreenShowPowerActions": true,
   "lockScreenShowSystemIcons": true,
@@ -516,6 +518,11 @@
   "maxFprintTries": 15,
   "enableU2f": false,
   "u2fMode": "or",
+  "lockPamPath": "",
+  "lockPamInlineFprint": false,
+  "lockPamInlineU2f": false,
+  "lockPamExternallyManaged": false,
+  "lockU2fPamPath": "",
   "lockScreenInactiveColor": "#000000",
   "lockScreenNotificationMode": 0,
   "lockScreenVideoEnabled": false,
@@ -579,6 +586,7 @@
   "updaterIntervalSeconds": 1800,
   "updaterIncludeFlatpak": true,
   "updaterAllowAUR": true,
+  "updaterIgnoredPackages": [],
   "displayNameMode": "system",
   "screenPreferences": {},
   "showOnLastDisplay": {},
@@ -786,7 +794,11 @@
   ],
   "systemMonitorVariants": [],
   "desktopWidgetPositions": {},
-  "desktopWidgetGridSettings": {},
+  "desktopWidgetGridSettings": {
+    "DP-1": {
+      "size": 20
+    }
+  },
   "desktopWidgetInstances": [
     {
       "id": "dw_1777933605783_1v1agzeuf",
@@ -807,16 +819,22 @@
       },
       "positions": {
         "DP-1": {
-          "width": 1050.2890625,
-          "height": 210.58203125,
+          "width": 1039.12890625,
+          "height": 209.4296875,
           "x": 803.73828125,
-          "y": 486.625
+          "y": 484.98828125
         },
         "": {
           "width": 100,
           "height": 100,
           "x": 0,
           "y": 0
+        },
+        "FALLBACK": {
+          "width": 200,
+          "height": 200,
+          "x": 860,
+          "y": 440
         }
       }
     },
@@ -861,6 +879,12 @@
           "height": 180,
           "x": 0,
           "y": 0
+        },
+        "FALLBACK": {
+          "width": 320,
+          "height": 480,
+          "x": 800,
+          "y": 300
         }
       }
     },
@@ -885,14 +909,20 @@
         "DP-1": {
           "width": 433.33203125,
           "height": 397.05078125,
-          "x": 806.08984375,
-          "y": 76.85546875
+          "x": 810.234375,
+          "y": 83.00390625
         },
         "": {
           "width": 100,
           "height": 45,
           "x": 0,
           "y": 0
+        },
+        "FALLBACK": {
+          "width": 160,
+          "height": 70,
+          "x": 880,
+          "y": 505
         }
       }
     },
@@ -949,13 +979,19 @@
           "width": 482.18359375,
           "height": 458.51171875,
           "x": 1189.11328125,
-          "y": 83.28125
+          "y": 81.42578125
         },
         "": {
           "width": 200,
           "height": 200,
           "x": 0,
           "y": 0
+        },
+        "FALLBACK": {
+          "width": 200,
+          "height": 200,
+          "x": 860,
+          "y": 440
         }
       }
     }
@@ -996,5 +1032,5 @@
   "barInsetPaddingShared": -1,
   "barInsetPaddingSyncAll": false,
   "frameBarInsetPadding": -1,
-  "configVersion": 12
+  "configVersion": 13
 }
