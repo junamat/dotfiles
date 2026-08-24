@@ -118,3 +118,5 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias gamma='hyprctl hyprsunset gamma'
+alias cheat='gamma 8.7'
+alias uncheat='gamma 100'
