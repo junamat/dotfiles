@@ -42,8 +42,7 @@ hl.config({
 		blur = {
 			enabled = true,
 			size = 6,
-			passes = 3,
-
+			passes = 3,	
 			noise = 0.02,
             contrast = 0.9,
             vibrancy = 0.3,
@@ -85,6 +84,7 @@ hl.window_rule({
 	match = { class = "^(steam)$", title = "^(notificationtoasts)" },
 	no_initial_focus = true,
 	pin = true,
+	opacity = "1 override",
 })
 hl.window_rule({
 	match = { class = "^(zen)$", title = "^(Picture-in-Picture)$" },
