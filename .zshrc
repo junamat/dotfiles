@@ -120,3 +120,5 @@ alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias gamma='hyprctl hyprsunset gamma'
 alias cheat='gamma 8.7'
 alias uncheat='gamma 100'
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Zen Browser
+Exec=/opt/zen-browser-bin/zen-bin %u
+Icon=zen-browser

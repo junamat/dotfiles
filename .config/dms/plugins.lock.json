@@ -1,0 +1,56 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "calculator": {
+      "repo": "https://github.com/rochacbruno/DankCalculator",
+      "commit": "a27b80ad8c3dd42da11af83461674fb362817515"
+    },
+    "dankAudioVisualizer": {
+      "repo": "https://github.com/odtgit/DankAudioVisualizer",
+      "commit": "25424e8d570e000f4ab086c9e5e1122180861a65"
+    },
+    "dankBitwarden": {
+      "repo": "https://github.com/pacman99/DankBitwarden",
+      "commit": "6fd83d8b6ab54d2d6a996bed7291b70316c99965"
+    },
+    "dankChat": {
+      "repo": "https://github.com/coldi1337/DankChat",
+      "commit": "6aeff5f879e1a3621a4f065ec1fd0ad74eb071a3"
+    },
+    "dankHyprlandWindows": {
+      "repo": "https://github.com/AvengeMedia/dms-plugins",
+      "path": "DankHyprlandWindows",
+      "commit": "69fcc477de31616807bfc6ee03492319cc7e2484"
+    },
+    "desktopCommand": {
+      "repo": "https://github.com/yayuuu/desktopCommand",
+      "commit": "a2e663ee031918ea01e2e65cf88aa3ded85a53f8"
+    },
+    "emojiLauncher": {
+      "repo": "https://github.com/devnullvoid/dms-emoji-launcher",
+      "commit": "fc385900e6df292f0a7e5bdda4e3e37169897d7c"
+    },
+    "fullscreenPowerMenu": {
+      "repo": "https://github.com/JDKamalakar/DMS-Fullscreen_Power_Menu",
+      "commit": "3ec625d2e0105a063492249ef732a0ca91cf91b8"
+    },
+    "imageConverter": {
+      "repo": "https://github.com/murilo-gotardo/dms-image-converter",
+      "commit": "942173672ccac02480075fc2011403ae057e2b4a"
+    },
+    "simpleAudioControl": {
+      "repo": "https://github.com/Dadangdut33/dms-plugins",
+      "path": "SimpleAudioControl",
+      "commit": "63fe6b87c497f1f7c2ea61432716817db1c5c3a4"
+    },
+    "systemMonitorPlus": {
+      "repo": "https://github.com/Dadangdut33/dms-plugins",
+      "path": "SystemMonitorPlus",
+      "commit": "63fe6b87c497f1f7c2ea61432716817db1c5c3a4"
+    },
+    "usbManager": {
+      "repo": "https://github.com/NordicsSys/dms-usb-manager",
+      "commit": "483d97c108314b1cf0c5df62141517e79636d937"
+    }
+  }
+}

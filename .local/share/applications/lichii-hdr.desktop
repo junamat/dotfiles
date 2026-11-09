@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Lichii HDR
+GenericName=Switch Emulator (HDR build)
+Comment=Local Lichii build with native HDR (PR #180)
+Icon=lichii-hdr
+TryExec=/home/juan/Proyectos/Lichii-hdr/build/release/bin/lichii
+Exec=/home/juan/Proyectos/Lichii-hdr/build/release/bin/lichii %f
+Path=/home/juan/Proyectos/Lichii-hdr/build/release/bin
+Categories=Game;Emulator;Qt;
+Keywords=Nintendo;Switch;Lichii;HDR;
+StartupWMClass=lichii

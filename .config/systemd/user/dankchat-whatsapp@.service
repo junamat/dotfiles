@@ -1,0 +1,13 @@
+[Unit]
+Description=DankChat WhatsApp synchronization
+PartOf=dms.service
+After=network-online.target
+
+[Service]
+ExecStart=/bin/sh "/home/juan/.config/dms/plugins/dankChat/scripts/run-whatsapp-sync" "%i"
+Restart=on-failure
+RestartSec=10
+UMask=0077
+NoNewPrivileges=true
+StandardOutput=null
+StandardError=null

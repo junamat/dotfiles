@@ -1,0 +1,15 @@
+model: 4x32
+double_upscale: true
+blur: 0.86
+gpu: AMD Radeon RX 7800 XT
+vulkan_present_mode: mailbox
+profiles:
+  ATRI -My Dear Moments-:
+    match:
+      title_contains: ATRI -My Dear Moments-
+      width: '1280'
+      height: '720'
+    options:
+      blur: 0.92
+      frame_timeout: 501000000
+    icon: /home/juan/.config/linux-rt-upscaler/icons/ATRI -My Dear Moments-.png

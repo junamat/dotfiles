@@ -26,15 +26,16 @@ hl.config({
 		gaps_out = 5,
 		border_size = 2,
 		layout = "dwindle",
+		allow_tearing = true,
 	},
 	decoration = {
 		rounding = 12,
 		active_opacity = 0.85,
-		inactive_opacity = 0.5,
+		inactive_opacity = 0.7,
 		shadow = {
 			enabled = true,
 			range = 30,
-			render_power = 5,
+			render_power = 4,
 			offset = "0 5",
 			color = "rgba(00000070)",
 		},
@@ -97,6 +98,9 @@ hl.window_rule({
 	opacity = "0.9 override",
 })
 hl.window_rule({ match = { class = "^(zoom)$" }, float = true })
+
+-- Thunderbird: siempre en special:mail
+hl.window_rule({ match = { class = "^(org.mozilla.Thunderbird)$" }, workspace = "special:mail silent" })
 hl.window_rule({
 	match = { class = "steam_app_\\d+" },
 	opacity = "1 override",
@@ -107,6 +111,8 @@ hl.window_rule({
 	match = { title = "^(Teclado en pantalla de Steam Input)$"},
 	opacity = "0.8 override"
 })
+
+--hl.window_rule({ match = { class = "^kitty$" }, suppress_event = "maximize" })
 hl.on("window.close", function(w)
     if w and w.class and string.match(w.class, "^steam_app_%d+$") then
         -- Wait 50ms to allow the window to fully vanish from the compositor tree

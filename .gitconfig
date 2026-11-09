@@ -1,0 +1,11 @@
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
+	helper = 
+	helper = /usr/bin/git-credential-manager
+	credentialStorage = secretservice
+	credentialStore = secretservice
+[user]
+	email = plmauna@gmail.com
+	name = junamat
+[credential "https://dev.azure.com"]
+	useHttpPath = true

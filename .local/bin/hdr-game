@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# HDR on DP-1 only while the gamescope window has focus; sRGB otherwise.
+# Usage (Steam launch options): /home/juan/.local/bin/hdr-game <command...>
+MON='output = "DP-1", mode = "3440x1440@240.085", position = "1940x0", scale = 1, bitdepth = 10'
+SOCK="$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock"
+GRACE=${HDR_GRACE:-15}   # seconds after launch during which HDR is kept regardless of focus
+
+STATE=""
+set_cm() {
+  [[ "$STATE" == "$1" ]] && return
+  hyprctl eval "hl.monitor({ $MON, cm = \"$1\" })" >/dev/null 2>&1
+  STATE="$1"
+}
+
+listen() {
+  local start=$SECONDS
+  socat -u "UNIX-CONNECT:$SOCK" - | while IFS= read -r line; do
+    [[ "$line" == activewindow\>\>* ]] || continue
+    class="${line#activewindow>>}"; class="${class%%,*}"
+    if [[ "$class" == gamescope* ]]; then
+      set_cm hdr
+    elif (( SECONDS - start >= GRACE )); then
+      set_cm srgb
+    fi
+  done
+}
+
+cleanup() {
+  [[ -n "$LPID" ]] && pkill -P "$LPID" 2>/dev/null; kill "$LPID" 2>/dev/null
+  hyprctl eval "hl.monitor({ $MON, cm = \"srgb\" })" >/dev/null 2>&1
+}
+trap cleanup EXIT INT TERM
+
+# Start in HDR so the game sees HDR when it probes at startup.
+set_cm hdr
+listen & LPID=$!
+sleep 1
+"$@"

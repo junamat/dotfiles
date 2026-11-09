@@ -1,0 +1,24 @@
+palette:
+  background: none
+  caption_background: '#99000000'
+  text: '#cccccc'
+  text_hover: '#ffffff'
+  text_subtle: '#888888'
+  icon: '#7a9eb1'
+  border: '#444444'
+  border_hover: '#555555'
+  input: '#2a2a2c'
+  input_hover: '#353535'
+  input_disabled: '#1e1e1e'
+  control: '#4a9eff'
+  control_hover: '#6aade5'
+  handle: '#3a3a3c'
+  handle_hover: '#4a4a4c'
+  button: '#1e1e1e'
+  button_hover: '#2c2c2c'
+  reset: '#914343'
+  reset_hover: '#b55a5a'
+palette_preset: Auto
+tile_columns: 2
+auto_refresh_ms: 3476
+tile_preview_interval_ms: 505

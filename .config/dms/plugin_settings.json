@@ -1,0 +1,99 @@
+{
+  "screenRecorder": {
+    "enabled": true
+  },
+  "amdGpuMonitorRevive": {
+    "enabled": true,
+    "popoutStyle": "dmsExtended"
+  },
+  "dmsAgent": {
+    "enabled": true
+  },
+  "claudeCodeUsage": {
+    "enabled": true
+  },
+  "dankKDEConnect": {
+    "enabled": true,
+    "selectedDeviceId": "f096239fec164e90bbd241cb7cdae7be"
+  },
+  "mediaControlsPlus": {
+    "enabled": true
+  },
+  "dankBitwarden": {
+    "enabled": true,
+    "trigger": "["
+  },
+  "imageConverter": {
+    "enabled": true
+  },
+  "dankHyprlandWindows": {
+    "enabled": true
+  },
+  "usbManager": {
+    "enabled": true
+  },
+  "dankPomodoroTimer": {
+    "enabled": true
+  },
+  "discordVoice": {
+    "enabled": true
+  },
+  "developerUtilities": {
+    "enabled": true
+  },
+  "systemMonitorPlus": {
+    "enabled": true,
+    "cpuTempEnabled": true,
+    "ramUsageEnabled": true,
+    "gpuTempEnabled": true,
+    "gpuTempVisualStyle": "default",
+    "networkSpeedEnabled": false,
+    "diskPartitionUsageEnabled": false,
+    "gpuTempIconName": "palette"
+  },
+  "fullscreenPowerMenu": {
+    "enabled": true,
+    "dimOpacity": 80,
+    "menuOpacity": 40,
+    "primaryTintEnabled": true,
+    "tintIntensity": 10,
+    "shapeAnimationSpeed": 72,
+    "animationSpeed": 50
+  },
+  "emojiLauncher": {
+    "enabled": true
+  },
+  "aiOverviewControl": {
+    "enabled": true,
+    "pillProviders": "claude",
+    "providerSelection": "claude"
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "="
+  },
+  "simpleAudioControl": {
+    "enabled": true,
+    "showMic": false,
+    "showMicValue": false,
+    "speakerIconColorKey": "primary",
+    "maxVolumePercent": 200
+  },
+  "gameControllerBattery": {
+    "enabled": true,
+    "settingsSessionToken": 1792915497978,
+    "hideWhenNoControllersConnected": false,
+    "updateMethod": "both"
+  },
+  "dankChat": {
+    "enabled": true,
+    "telegramEnabled": false,
+    "demoMode": false,
+    "accountPreferences": {
+      "whatsapp": {
+        "notifications": "default",
+        "syncRead": true
+      }
+    }
+  }
+}

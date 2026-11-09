@@ -9,7 +9,15 @@ hl.config({
 	},
 	decoration = {
 		rounding = 8,
+		blur = {
+			passes = 2,
+		},
 	},
+})
+
+hl.layer_rule({
+	match = { namespace = "^dms:.*$" },
+	xray = true,
 })
 
 hl.layer_rule({

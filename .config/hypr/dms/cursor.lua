@@ -2,8 +2,8 @@
 
 hl.env("HYPRCURSOR_THEME", "Plasma-Overdose")
 hl.env("XCURSOR_THEME", "Plasma-Overdose")
-hl.env("HYPRCURSOR_SIZE", "28")
-hl.env("XCURSOR_SIZE", "28")
+hl.env("HYPRCURSOR_SIZE", "93")
+hl.env("XCURSOR_SIZE", "93")
 
 hl.config({
 	cursor = {
