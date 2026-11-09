@@ -1,0 +1,4 @@
+archlinux-keyring-wkd-sync.timer
+fstrim.timer
+shadow.timer
+systemd-tmpfiles-clean.timer

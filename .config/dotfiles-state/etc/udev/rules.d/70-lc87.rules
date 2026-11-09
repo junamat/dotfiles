@@ -1,0 +1,2 @@
+KERNEL=="hidraw*", ATTRS{idVendor}=="056a", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTR{idVendor}=="0ac3", TAG+="uaccess"

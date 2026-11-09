@@ -1,0 +1,2 @@
+org.DolphinEmu.dolphin-emu	dolphin-emu-origin
+org.DolphinEmu.dolphin-emu	dolphin

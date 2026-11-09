@@ -1,0 +1,10 @@
+~/.icons/Plasma-Overdose
+~/.icons/default
+~/.local/share/icons/Plasma-Overdose
+~/.local/share/icons/Ralsei
+~/.local/share/icons/Ralsei.bak-original
+~/.local/share/icons/Ralsei.zip
+~/.local/share/icons/c4o.png
+~/.local/share/icons/default
+~/.local/share/icons/hicolor
+~/.local/share/icons/osu-wine.png

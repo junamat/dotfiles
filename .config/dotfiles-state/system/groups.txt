@@ -1,0 +1,10 @@
+acestream
+docker
+gamemode
+games
+greeter
+input
+juan
+ollama
+realtime
+wheel

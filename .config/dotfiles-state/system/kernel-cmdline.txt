@@ -1,0 +1,1 @@
+initrd=\initramfs-linux-cachyos.img root=UUID=a3360c9a-123c-4e61-b546-08d37f666e31 rw nowatchdog quiet splash
